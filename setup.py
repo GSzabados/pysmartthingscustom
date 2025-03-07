@@ -10,7 +10,7 @@ with open(os.path.join("README.md"), "r") as fh:
     long_description = fh.read()
 
 const = {}
-with open(os.path.join("pysmartthings", "const.py"), "r") as fp:
+with open(os.path.join("pysmartthingscustom", "const.py"), "r") as fp:
     exec(fp.read(), const)
 
 setup(
@@ -19,9 +19,9 @@ setup(
     description="A python library for interacting with the SmartThings cloud API build with asyncio and aiohttp.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/andrewsayre/pysmartthings",
+    url="https://github.com/GSzabados/pysmartthingscustom/",
     author="Andrew Sayre",
-    author_email="andrew@sayre.net",
+    author_email="none@none.me",
     license="ASL 2.0",
     packages=find_packages(exclude=("tests*",)),
     install_requires=["aiohttp>=3.8.4,<4.0.0"],
